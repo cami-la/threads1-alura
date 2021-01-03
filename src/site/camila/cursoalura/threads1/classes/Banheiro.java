@@ -31,7 +31,7 @@ public class Banheiro {
 
 	    System.out.println(nome + " batendo na porta");
 
-	    synchronized (this) {
+	    synchronized (this) /*mutex*/ {
 
 	        System.out.println(nome + " entrando no banheiro");
 	        System.out.println(nome + " fazendo coisa demorada");
