@@ -1,13 +1,16 @@
 package site.camila.cursoalura.threads1.executavel;
 
-import site.camila.cursoalura.threads1.classes.Lista;
+import java.util.List;
+import java.util.Vector;
+
 import site.camila.cursoalura.threads1.classes.TarefaAdiconarElemento;
 
 public class PrincipalLista {
 
 	public static void main(String[] args) {
-		Lista lista = new Lista();
-
+		//List<String> lista = Collections.synchronizedList(new ArrayList<String>());
+		List<String> lista = new Vector<String>();
+		
 		for (int i = 0; i < 10; i++) {
 			new Thread(new TarefaAdiconarElemento(lista, i)).start();
 		}
@@ -18,8 +21,8 @@ public class PrincipalLista {
 			e.printStackTrace();
 		}
 
-		for (int i = 0; i < lista.tamanho(); i++)
-			System.out.println(i + " -" + lista.pegaElemento(i));
+		for (int i = 0; i < lista.size(); i++)
+			System.out.println(i + " -" + lista.get(i));
 	}
 
 }
