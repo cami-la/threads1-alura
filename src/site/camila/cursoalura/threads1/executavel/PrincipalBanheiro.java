@@ -7,7 +7,8 @@ import site.camila.cursoalura.threads1.classes.TarefaNumero2;
 public class PrincipalBanheiro {
 
 	public static void main(String[] args) {
-
+		//2 threads acessando o mesmo objeto
+		
         Banheiro banheiro = new Banheiro();
 
         //Passando a tarefa e o nome do Thread
