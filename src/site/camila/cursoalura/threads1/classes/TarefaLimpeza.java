@@ -10,6 +10,10 @@ public class TarefaLimpeza implements Runnable {
 
     @Override
     public void run() {
-        this.banheiro.limpa();
+        while(true) {
+   	    	this.banheiro.limpa();
+   	    	banheiro.dormeUmPouco(20000);
+
+        }
     }
 }
