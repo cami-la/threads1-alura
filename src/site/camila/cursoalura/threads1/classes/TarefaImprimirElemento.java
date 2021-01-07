@@ -1,11 +1,11 @@
 package site.camila.cursoalura.threads1.classes;
 
-public class TarefaImprimirElemnto implements Runnable {
+public class TarefaImprimirElemento implements Runnable {
 
 	private Lista lista;
 	// private int numeroDoThread;
 
-	public TarefaImprimirElemnto(Lista lista) {
+	public TarefaImprimirElemento(Lista lista) {
 		this.lista = lista;
 		// this.numeroDoThread = numeroDoThread;
 	}

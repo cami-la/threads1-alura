@@ -2,7 +2,7 @@ package site.camila.cursoalura.threads1.executavel;
 
 import site.camila.cursoalura.threads1.classes.Lista;
 import site.camila.cursoalura.threads1.classes.TarefaAdiconarElemento;
-import site.camila.cursoalura.threads1.classes.TarefaImprimirElemnto;
+import site.camila.cursoalura.threads1.classes.TarefaImprimirElemento;
 
 public class PrincipalLista {
 
@@ -14,7 +14,7 @@ public class PrincipalLista {
 			new Thread(new TarefaAdiconarElemento(lista, i)).start();
 		}
 		
-		new Thread(new TarefaImprimirElemnto(lista)).start();
+		new Thread(new TarefaImprimirElemento(lista)).start();
 		
 		
 		
